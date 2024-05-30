@@ -1,0 +1,54 @@
+class Pedido {
+    constructor(ID, status, data_do_pedido) {
+        this.ID = ID;
+        this.status = status;
+        this.data_do_pedido = data_do_pedido;
+    }
+}
+
+class Funcionario {
+    constructor(ID, nome_do_usuario, cpf, email, senha) {
+        this.ID = ID;
+        this.nome_do_usuario = nome_do_usuario;
+        this.cpf = cpf;
+        this.email = email;
+        this.senha = senha;
+    }
+}
+
+class Cliente {
+    constructor(ID, nome, data_de_nascimento, cpf, email, senha) {
+        this.ID = ID;
+        this.nome = nome;
+        this.data_de_nascimento = data_de_nascimento;
+        this.cpf = cpf;
+        this.email = email;
+        this.senha = senha;
+    }
+}
+
+class Produto {
+    constructor(data_de_validade, preco, quantidade_no_estoque, nome, descricao) {
+        this.data_de_validade = data_de_validade;
+        this.preco = preco;
+        this.quantidade_no_estoque = quantidade_no_estoque;
+        this.nome = nome;
+        this.descricao = descricao;
+    }   
+}
+
+class Sistema {
+    // Responsável por iterações entre classes
+}
+
+// Simulação de entrada de dados para criar um novo funcionário
+const funcionario = new Funcionario(
+    inquire("Digite o ID do funcionário:"),
+    inquire("Digite o nome do usuário:"),
+    inquire("Digite o CPF:"),
+    inquire("Digite o email:"),
+    inquire("Digite a senha:")
+);
+
+console.log(funcionario);
+//mesmo instalando o inquire não dá certo
